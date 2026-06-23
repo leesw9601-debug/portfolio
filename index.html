@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COBI | 마케터 포트폴리오</title>
     
-    <!-- 💡 카카오톡 미리보기 카드 설정 영역 (추가된 부분) -->
+    <!-- 💡 카카오톡 미리보기 카드 설정 영역 -->
     <meta property="og:title" content="COBI | 데이터로 증명하는 퍼포먼스 마케터">
     <meta property="og:description" content="시장을 분석하고 성장 궤도를 만드는 코비의 포트폴리오입니다.">
     <meta property="og:image" content="p1-image.png">
@@ -91,10 +91,10 @@
                 品牌의 유니크한 가치를 설계하고 정교한 오디언스 타겟팅 및 데이터 드리븐 설루션으로 비즈니스를 유의미하게 성장시킵니다.
             </p>
             <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#projects" class="bg-brand-orange hover:bg-[#ff491d] text-white px-8 py-4 rounded-xl font-bold tracking-wide transition-all duration-300">
+                <a href="#projects" class="inline-flex items-center justify-center bg-brand-orange hover:bg-[#ff491d] text-white px-8 h-14 rounded-xl font-bold tracking-wide transition-all duration-300 leading-none">
                     프로젝트 보러가기
                 </a>
-                <a href="#about" class="border border-zinc-700 hover:border-zinc-400 hover:bg-zinc-900/40 text-white px-8 py-4 rounded-xl font-bold tracking-wide transition-all duration-300">
+                <a href="#about" class="inline-flex items-center justify-center border border-zinc-700 hover:border-zinc-400 hover:bg-zinc-900/40 text-white px-8 h-14 rounded-xl font-bold tracking-wide transition-all duration-300 leading-none">
                     소개 읽어보기
                 </a>
             </div>
@@ -123,13 +123,27 @@
                 <p>
                     GA4를 기반으로 한 면밀한 데이터 분석을 좋아하며, 타겟이 열광하는 기발한 숏폼 콘텐츠 기획력도 함께 가지고 있습니다. 분석만 하거나 기획만 하는 한쪽으로 치우친 마케팅이 아닌, 두 가지를 융합한 <span class="text-white border-b-2 border-brand-orange/40 pb-0.5">하이브리드 마케팅</span>으로 폭발적인 전환 효율을 창출합니다.
                 </p>
-                <!-- 핵심 역량 키워드 -->
-                <div class="flex flex-wrap gap-2.5 pt-6">
-                    <span class="bg-brand-card border border-brand-border text-sm px-4.5 py-2.5 rounded-xl font-medium text-white hover:border-brand-orange transition-colors"><i class="fa-solid fa-chart-line text-brand-orange mr-2"></i>퍼포먼스 마케팅</span>
-                    <span class="bg-brand-card border border-brand-border text-sm px-4.5 py-2.5 rounded-xl font-medium text-white hover:border-brand-orange transition-colors"><i class="fa-solid fa-pen-nib text-brand-orange mr-2"></i>콘텐츠 기획 & 카피라이팅</span>
-                    <span class="bg-brand-card border border-brand-border text-sm px-4.5 py-2.5 rounded-xl font-medium text-white hover:border-brand-orange transition-colors"><i class="fa-solid fa-filter text-brand-orange mr-2"></i>그로스/GA4 분석</span>
-                    <span class="bg-brand-card border border-brand-border text-sm px-4.5 py-2.5 rounded-xl font-medium text-white hover:border-brand-orange transition-colors"><i class="fa-solid fa-fire text-brand-orange mr-2"></i>ROAS 400% 달성</span>
+                
+                <!-- 🛠️ 가로 폭(w-full sm:w-[260px]) 및 정렬 방식 일치 작업 수행 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 max-w-2xl">
+                    <div class="inline-flex items-center justify-start bg-brand-card border border-brand-border text-sm px-5 h-12 rounded-xl font-medium text-white hover:border-brand-orange transition-colors space-x-2.5">
+                        <i class="fa-solid fa-chart-line text-brand-orange shrink-0"></i>
+                        <span>퍼포먼스 마케팅</span>
+                    </div>
+                    <div class="inline-flex items-center justify-start bg-brand-card border border-brand-border text-sm px-5 h-12 rounded-xl font-medium text-white hover:border-brand-orange transition-colors space-x-2.5">
+                        <i class="fa-solid fa-pen-nib text-brand-orange shrink-0"></i>
+                        <span>콘텐츠 기획 & 카피라이팅</span>
+                    </div>
+                    <div class="inline-flex items-center justify-start bg-brand-card border border-brand-border text-sm px-5 h-12 rounded-xl font-medium text-white hover:border-brand-orange transition-colors space-x-2.5">
+                        <i class="fa-solid fa-filter text-brand-orange shrink-0"></i>
+                        <span>그로스/GA4 분석</span>
+                    </div>
+                    <div class="inline-flex items-center justify-start bg-brand-card border border-brand-border text-sm px-5 h-12 rounded-xl font-medium text-white hover:border-brand-orange transition-colors space-x-2.5">
+                        <i class="fa-solid fa-fire text-brand-orange shrink-0"></i>
+                        <span>ROAS 400% 달성</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -175,7 +189,7 @@
         </div>
     </section>
 
-    <!-- 4. Projects Section (4개 이미지 그리드 구조로 개편) -->
+    <!-- 4. Projects Section -->
     <section id="projects" class="py-32 px-6 max-w-7xl mx-auto scroll-mt-20">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20" data-aos="fade-up">
             <div>
@@ -195,8 +209,7 @@
                     <img src="http://googleusercontent.com/image_collection/image_retrieval/5398514621902021770_0" 
                          alt="Brand Identity Project" 
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <!-- Overlay Metric -->
-                    <div class="absolute top-6 right-6 bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 py-2 rounded-xl">
+                    <div class="absolute top-6 right-6 inline-flex items-center justify-center bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 h-9 rounded-xl leading-none">
                         <span class="text-brand-orange text-xs font-bold uppercase">소셜 참여도 +240%</span>
                     </div>
                 </div>
@@ -225,8 +238,7 @@
                     <img src="http://googleusercontent.com/image_collection/image_retrieval/8475093586914255588_0" 
                          alt="Social Media Campaign Project" 
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <!-- Overlay Metric -->
-                    <div class="absolute top-6 right-6 bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 py-2 rounded-xl">
+                    <div class="absolute top-6 right-6 inline-flex items-center justify-center bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 h-9 rounded-xl leading-none">
                         <span class="text-brand-orange text-xs font-bold uppercase">조회수 500만+ 돌파</span>
                     </div>
                 </div>
@@ -255,8 +267,7 @@
                     <img src="http://googleusercontent.com/image_collection/image_retrieval/10428453878760287115_0" 
                          alt="Performance Optimization Project" 
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <!-- Overlay Metric -->
-                    <div class="absolute top-6 right-6 bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 py-2 rounded-xl">
+                    <div class="absolute top-6 right-6 inline-flex items-center justify-center bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 h-9 rounded-xl leading-none">
                         <span class="text-brand-orange text-xs font-bold uppercase">CVR 개선 2.8% ➔ 5.2%</span>
                     </div>
                 </div>
@@ -285,8 +296,7 @@
                     <img src="http://googleusercontent.com/image_collection/image_retrieval/11089475399001144450_0" 
                          alt="Crowdfunding Project" 
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <!-- Overlay Metric -->
-                    <div class="absolute top-6 right-6 bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 py-2 rounded-xl">
+                    <div class="absolute top-6 right-6 inline-flex items-center justify-center bg-brand-dark/90 backdrop-blur-md border border-brand-orange/30 px-4 h-9 rounded-xl leading-none">
                         <span class="text-brand-orange text-xs font-bold uppercase">펀딩액 1.2억원 돌파</span>
                     </div>
                 </div>
@@ -321,11 +331,11 @@
                     브랜드의 폭발적인 성장을 원하거나 새로운 마케팅 기획/프로젝트 협업을 구상하고 계시다면 편하게 연락해 주세요.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-6 text-zinc-300 text-base mb-16">
-                    <a href="mailto:your-email@gmail.com" class="inline-flex items-center justify-center gap-3 bg-zinc-900 border border-brand-border hover:border-brand-orange px-8 py-4.5 rounded-2xl transition-all duration-300">
+                    <a href="mailto:your-email@gmail.com" class="inline-flex items-center justify-center gap-3 bg-zinc-900 border border-brand-border hover:border-brand-orange px-8 h-16 rounded-2xl transition-all duration-300 leading-none">
                         <i class="fa-regular fa-envelope text-brand-orange text-lg"></i>
                         <span>your-email@gmail.com</span>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" class="inline-flex items-center justify-center gap-3 bg-zinc-900 border border-brand-border hover:border-brand-orange px-8 py-4.5 rounded-2xl transition-all duration-300">
+                    <a href="https://linkedin.com" target="_blank" class="inline-flex items-center justify-center gap-3 bg-zinc-900 border border-brand-border hover:border-brand-orange px-8 h-16 rounded-2xl transition-all duration-300 leading-none">
                         <i class="fa-brands fa-linkedin-in text-brand-orange text-lg"></i>
                         <span>LinkedIn 프로필 확인</span>
                     </a>
